@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee Home Page</title>
+
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 
 <body>
@@ -13,51 +15,116 @@
     <div class="container-large">
       <div class="header__body">
         <div class="logo">
-        <a class="logo__link" href=""><img src="images/logo.png" alt="Логотип Glee" class="logo__image"></a>
+          <a class="logo__link" href=""><img src="images/logo.png" alt="Логотип Glee" class="logo__image"></a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <a href="#" class="controls__search">
+            <img class="controls__image" src="images/search.png"></img>
+          </a>
+          <a href="#" class="controls__orange-blok controls__orange-blok--heart">
+            <img class="controls__image" src="images/heart.png"></img>
+            <span class="controls__count controls__count--heart">0</span>
+          </a>
+          <a href="#" class="controls__orange-blok controls__orange-blok--cart">
+            <img class="controls__image" src="images/cart.png"></img>
+            <span class="controls__count controls__count--cart">0</span>
+          </a>
+          <a href="#" class="controls__phone">
+            <img class="controls__image" src="images/phone_dots.png"></img>
+          </a>
+        </div>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#">Home +</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">About</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Services</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Pages +</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">News</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="controls">
-        <a href="#" class="controls__search">
-          <img class="controls__image" src="images/search.png"></img>
-        </a>
-        <a href="#" class="controls__orange-blok controls__orange-blok--heart">
-          <img class="controls__image" src="images/heart.png"></img>
-          <span class="controls__count">0</span>
-        </a>
-        <a href="#" class="controls__orange-blok controls__orange-blok--cart">
-          <img class="controls__image" src="images/cart.png"></img>
-          <span class="controls__count">0</span>
-        </a>
-        <a href="#" class="controls__phone">
-          <img class="controls__image" src="images/phone_dots.png"></img>
-        </a>
+
+      <div class="slider">
+
+        <div class="slider__item">
+          <div class="container-small">
+            <div class="slider__body">
+
+              <div class="slider__content">
+                <h2 class="slider__title">
+                  Smart and trendy
+                </h2>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__link" href="#">Shop Now</a>
+              </div>
+
+              <div class="slider__image" style="background-image: url(images/sofa.png);"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="container-small">
+            <div class="slider__body">
+              
+              <div class="slider__content">
+                <h2 class="slider__title">
+                  Smart and trendy
+                </h2>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__link" href="#">Shop Now</a>
+              </div>
+
+              <div class="slider__image" style="background-image: url(images/sofa.png);"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="container-small">
+            <div class="slider__body">
+              
+              <div class="slider__content">
+                <h2 class="slider__title">
+                  Smart and trendy
+                </h2>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__link" href="#">Shop Now</a>
+              </div>
+
+              <div class="slider__image" style="background-image: url(images/sofa.png);"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      </div>
-      
     </div>
 
   </header>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
