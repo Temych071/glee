@@ -32,7 +32,19 @@
     font-size: 15px;
     line-height: 1.3;
     font-weight: 700;
-    }
+  }
+
+  &__link:hover {
+    box-shadow: 0px 0px 12px 8px #bdc0c1, 0px 0px 12px 9px #bdc0c1 inset;
+    text-shadow: 1px 1px 1px #555353, 1px 0 1px #5c5959;
+  }
+
+  &__link:focus {
+    box-shadow: 0px 0px 12px 8px rgba(34, 60, 80, 0.32), 0px 0px 12px 9px rgba(34, 60, 80, 0.32) inset;
+    text-shadow: 1px 1px 1px #555353, 1px 0 1px #5c5959;
+  }
+  
+  
 }
 
 .controls {
@@ -203,36 +215,59 @@
     background-position: bottom;
   }
   
-.slick-dots {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  bottom: 45px;
-  transform: translateX(-50%);
-  color: $white;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 700;
-}
+  .button:hover {
+    box-shadow: 7px -9px 8px 4px rgba(34, 60, 80, 0.22);
+    text-shadow: 1px 1px 2px #000000, 1px 0 1px #000000;
+  }
 
-.slick-dots button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #fde3cc;
-  border: none;
-  font-size: 11px;
-  cursor: pointer;
-}
+  .button:focus {
+    box-shadow: -9px -9px 8px -1px rgba(7, 7, 7, 0.22) inset, 5px 5px 5px -1px rgba(7, 7, 7, 0.22) inset;
+  }
 
-.slick-dots .slick-active button {
-  background-color: #ffffff;
-  font-family: 'Rubik-Medium', sans-serif;
-} 
+  .button:active {
+    box-shadow: -5px -5px 8px -1px rgba(7, 7, 7, 0.22) inset, 5px 5px 5px -1px rgba(7, 7, 7, 0.22) inset;
+  }
 
-.slick-dots li:not(:last-child) {
-  margin-right: 12px;
-} 
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-50%);
+    color: $white;
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 700;
+  }
+
+  .slick-dots button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fde3cc;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .slick-dots .slick-active button {
+    background-color: #ffffff;
+    font-family: 'Rubik-Medium', sans-serif;
+  } 
+
+  .slick-dots li:not(:last-child) {
+    margin-right: 12px;
+  } 
+
+  .slick-dots button:focus {
+    box-shadow: 0px 0px 12px 1px #ffffff, 0px 0px 12px 1px #ffffff inset;
+  }
+
+  .slick-dots button:hover {
+    box-shadow: 0px 0px 12px 6px #b9b5b5, 0px 0px 12px 9px #f9f3f3 inset;
+    text-shadow: 1px 1px 1px #555353, 1px 0 1px #5c5959;
+  }
+
 
 }
 
@@ -342,7 +377,7 @@
     @extend %dmsansbold-700;
     font-size: 16px;
     background-color: transparent;
-    color: #000000;
+    color: #8b8b8b;
     border: none;
     padding: 0;
   }
@@ -351,6 +386,18 @@
     margin-right: 30px;
   }
 
+  &__btn:focus {
+    text-shadow: 0px 0px 2px #000000, 1px 0 1px #000000;
+  }
+  
+  &__btn:hover {
+    text-shadow: 1px 1px 2px #000000, 1px 0 1px #000000;
+  }
+  
+  .mixitup-control-active {
+    color:#000000;
+  }
+  
   &__content {
     display: flex;
     justify-content: space-between;
@@ -464,16 +511,16 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   &__logo {
-    margin-top: -30px;
-    margin-bottom: 30px;
+    margin-top: -18px;
+    margin-bottom: 26px;
   }
 
   &__item {
-    max-width: 200px;
+    max-width: 270px;
     width: 100%
   }
 
@@ -481,11 +528,12 @@
     @extend %dmsansbold-700;
     font-size: 16px;
     color: #1f2044;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &__option {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 
   &__link {
@@ -493,6 +541,11 @@
     font-size: 14px;
     line-height: 1;
     color: #7b7b7b;
+  }
+
+  &__newsletter {
+    margin-bottom: 33px;
+    line-height: 1.5;
   }
 
   &__bottom {
@@ -516,6 +569,11 @@
     font-size: 14px;
     line-height: 1;
     color: #7b7b7b;
+    letter-spacing: 0.3px;
+  }
+
+  &__menu-option:last-child &__menu-link{
+    padding: 0 0 0 15px;
   }
 
   &__menu-option:not(:last-child) {
@@ -523,10 +581,42 @@
   }
 }
 
+.form {
+  display: flex;
+  justify-content: space-between;
+  @extend %dmsansregular-400;
+
+  &__mail {
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background-color: #fef7f0;
+    padding-left: 12px;
+    border: none;
+  }
+
+  &__mail::placeholder {
+    font-size: 12px;
+    color: #234969;
+  }
+
+  &__subscribe {
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    background-color: #a3bbc8;
+    
+    border: none;
+  }
+}
+
 .address {
+  max-width: 200px;
+  width: 100%;
   @extend %rubikregular-400;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.6;
   font-style: normal;
 
   &__upprcase {
@@ -535,7 +625,7 @@
 }
 
 .address p{
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 
