@@ -24,9 +24,9 @@
   font-family: 'poppins-medium', sans-serif;
   font-weight: 500;
   font-style: normal;
-  src: local('poppins-medium'),
-        url('../fonts/poppins/poppins-medium.woff2') format('woff2'),
-        url('../fonts/poppins/poppins-medium.woff') format('woff2');
+  src: local('poppins-Medium'),
+        url('../fonts/poppins/poppins-Medium.woff2') format('woff2'),
+        url('../fonts/poppins/poppins-Medium.woff') format('woff2');
   font-display: swap;
 }
 /* ---------------------------------------------------- */
@@ -38,6 +38,16 @@
   src: local('DMSans-Regular'),
         url('../fonts/DMSans/DMSans-Regular.woff2') format('woff2'),
         url('../fonts/DMSans/DMSans-Regular.woff') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local('DMSans-Medium'),
+        url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Medium.woff') format('woff2');
   font-display: swap;
 }
 
