@@ -7,26 +7,34 @@ $DMSans-reg: #585858;
 
 /* Переменные для шрифтов */
 %rubikmedium-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
 %rubikregular-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
 %dmsansregular-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 400;
 }
 
 %dmsansmedium-500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 500;
 }
 
 %dmsansbold-700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+ }
+ @function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+ }

@@ -1,61 +1,92 @@
 /* Стили шрифта Rubik */
+
 @font-face {
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 500;
+  font-family: 'Rubik';
+  font-weight: 400;
   font-style: normal;
-  src: local('Rubik-Medium'),
-        url('../fonts/rubik/Rubik-Medium.woff2') format('woff2'),
-        url('../fonts/rubik/Rubik-Medium.woff') format('woff2');
+  src: 
+        url('../fonts/rubik/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/rubik/Rubik-Regular.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
+  font-family: 'Rubik';
+  font-weight: 500;
   font-style: normal;
-  src: local('Rubik-Regular'),
-        url('../fonts/rubik/Rubik-Regular.woff2') format('woff2'),
-        url('../fonts/rubik/Rubik-Regular.woff') format('woff2');
+  src: 
+        url('../fonts/rubik/Rubik-Medium.woff2') format('woff2'),
+        url('../fonts/rubik/Rubik-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-style: normal;
+  src: 
+        url('../fonts/rubik/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/rubik/Rubik-Bold.woff') format('woff');
   font-display: swap;
 }
 /* ---------------------------------------------------- */
 /* Стили шрифта Poppins */
 @font-face {
-  font-family: 'poppins-medium', sans-serif;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: 
+        url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
   font-weight: 500;
   font-style: normal;
-  src: local('poppins-Medium'),
-        url('../fonts/poppins/poppins-Medium.woff2') format('woff2'),
-        url('../fonts/poppins/poppins-Medium.woff') format('woff2');
+  src: 
+        url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
+  src: 
+        url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
   font-display: swap;
 }
 /* ---------------------------------------------------- */
 /* Стили шрифта DMSans */
 @font-face {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans';
   font-weight: 400;
   font-style: normal;
-  src: local('DMSans-Regular'),
+  src: 
         url('../fonts/DMSans/DMSans-Regular.woff2') format('woff2'),
         url('../fonts/DMSans/DMSans-Regular.woff') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans';
   font-weight: 500;
   font-style: normal;
-  src: local('DMSans-Medium'),
+  src: 
         url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
         url('../fonts/DMSans/DMSans-Medium.woff') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans';
   font-weight: 700;
   font-style: normal;
-  src: local('DMSans-Bold'),
+  src: 
         url('../fonts/DMSans/DMSans-Bold.woff2') format('woff2'),
         url('../fonts/DMSans/DMSans-Bold.woff') format('woff2');
   font-display: swap;
