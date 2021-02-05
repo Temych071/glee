@@ -1,261 +1,15 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
-@import 'components/libs';
+@import 'libs';
 @import 'global';
 
-.header {
+@import 'components/animations.scss';
+@import 'components/header-menu';
+@import 'components/header';
+@import 'components/footer';
 
-  &__body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 150px;
-  }
-}
 
-.header__link {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.menu {
-  margin-right: 21px;
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 34px;
-  }
-
-  &__link {
-    color: $menu-color;
-    @extend %rubikmedium-500;
-    font-size: 15px;
-    line-height: 1.3;
-    outline: none;
-    position: relative;
-    
-    &:after {
-      position: absolute;
-      z-index: -1;
-      bottom: -2px;
-      left: -5px;
-      width: calc(100% + 10px);
-      height: 2px;
-      background-color: #fcd7b6;
-      transition: height .3s;
-    }
-
-    &:focus:after {
-      height: calc(100% + 5px);
-    }
-    
-    &:hover:after {
-      content: '';
-    }
-    
-    &:active:after {
-      background-color: #fcd7b6;
-    }
-  }
-}
-
-.controls__heart-img {
-  position: relative;
-  z-index: 10;
-} 
-
-.controls__heart {
-  outline: none;
-
-  &:after {
-    position: absolute;
-    z-index: 1;
-    bottom: -2px;
-    top: -5px;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    border: 5px solid #78a9f8;
-    border-right: none;
-    transition: width .7s;
-  }
-
-  &:focus:after {
-    width: calc(100% + 15px);
-    border-radius: 25px 0 0 25px;
-    border: 5px solid #78a9f8;
-  }
-
-  &:hover {
-    
-    & path {
-      fill: red;
-    }
-
-    &:after {
-    background-color: none;
-    content: '';
-    }
-  }
-
-  &:active:after {
-    background-color: #78a9f8;
-  }
-}
-
-.controls__cart {
-  outline: none;
-
-  &:after {
-    position: absolute;
-    z-index: 1;
-    bottom: -2px;
-    top: -5px;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    border: 5px solid #78a9f8;
-    border-right: none;
-    transition: width .7s;
-  }
-
-  &:focus:after {
-    width: calc(100% + 15px);
-    border-radius:  0 25px 25px 0;
-    border: 5px solid #78a9f8;
-  }
-
-  &:hover {
-    
-    & path {
-      fill:red;
-    }
-
-    &:after {
-    background-color: none;
-    content: '';
-    }
-  }
-
-  &:active:after {
-    background-color: #78a9f8;
-  }
-}
-
-.controls {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-40%);
-
-  &__search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #edf1f4;
-    margin-right: 20px;
-    border-radius: 50%;
-    transition: box-shadow .3s;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 7px  #fcd7b6;
-    }
-
-    &:hover{
-      background-color: #78a9f8;
-      
-      path {
-        fill: white;
-      }
-    }
-
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 7px  #fcd7b6;
-    }
-  }
-
-  &__center {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 180px;
-    padding: 15px 12px 5px;
-    position: relative;
-    background-color: #fcd7b6;
-    height: 50px;
-    margin-right: 20px;
-    border-radius: 25px;
-  }
-
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 90px;
-    height: 50px;
-  }
-
-  &__grid {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #a3bbc8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: box-shadow .3s;
-    
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 7px  #fcd7b6;
-    }
-
-    &:hover{
-      background-color:  #618294;
-      path {
-        fill: white;
-      }
-    }
-
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 7px  #fcd7b6;
-    }
-  }
-
-  &__count {
-    position: absolute;
-    display: block;
-    top: 8px;
-    left: 41px;
-    font-size: 10px;
-    min-width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    color: $count-color;
-    background-color: #ffffff;
-    padding: 4px 4px;
-    line-height: 1;
-    z-index: 10;
-  }
-}
 /*----------------------------------------------------*/
 /* Стили слайдера */
 
@@ -295,7 +49,7 @@
 
   &__title {
     max-width: 440px;
-    color: $count-color;
+    color: $dark-blue;
     font-size: 72px;
     line-height: 1;
     margin-bottom: 26px;
@@ -306,7 +60,7 @@
   &__text {
     max-width: 380px;
     width: 100%;
-    color: $menu-color;
+    color: $light-blue;
     @extend %rubikregular-400;
     font-size: 18px;
     line-height: 1.6;
@@ -317,6 +71,7 @@
     padding: 20px 30px 30px;
     background-color: #a3bbc8;
     outline: none;
+    height: 60px;
 
     &::after {
       content: '';
@@ -348,7 +103,7 @@
     left: 50%;
     bottom: 45px;
     transform: translateX(-50%);
-    color: 12white;
+    color: white;
     @extend %rubikmedium-500;
 
     & button {
@@ -393,23 +148,10 @@
   display: block;
   position: relative;
   max-width: 200px;
-  height: 60px;
   color: white;
   @extend %rubikmedium-500;
   font-size: 15px;
   line-height: 1;
-  
-  &:hover {
-    box-shadow: 7px -9px 8px 4px rgba(34, 60, 80, 0.22);
-    text-shadow: 1px 1px 2px #000000, 1px 0 1px #000000;
-  }
-
-  &:focus {
-    box-shadow: -9px -9px 8px -1px rgba(7, 7, 7, 0.22) inset, 5px 5px 5px -1px rgba(7, 7, 7, 0.22) inset;
-  }
-  &:active {
-    box-shadow: -5px -5px 8px -1px rgba(7, 7, 7, 0.22) inset, 5px 5px 5px -1px rgba(7, 7, 7, 0.22) inset;
-  }
 }
 
 /*----------------------------------------------------*/
@@ -494,56 +236,25 @@
 .filter {
   display: flex;
   justify-content: center;
-}
+  margin-bottom: 70px;
 
-.filter-button {
-  @extend %dmsansbold-700;
-  font-size: 16px;
-  background-color: transparent;
-  color: #8b8b8b;
-  border: none;
-  padding: 0;
-  outline: none;
-  position: relative;
-  
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-  
-  &:after {
-    position: absolute;
-    z-index: -1;
-    bottom: -2px;
-    left: -5px;
-    width: calc(100% + 10px);
-    height: 2px;
-    background-color: #fcd7b6;
-    transition: height .3s;
-  }
-
-  &:focus:after {
-    height: calc(100% + 5px);
-    color: black;
-  }
-  
-  &:hover:after {
-    color: black;
-    content: '';
-  }
-  
-  &:active:after {
-    color: black;
-    background-color: #fcd7b6;
+  &__btn {
+    @extend %dmsansbold-700;
+    font-size: 16px;
+    background-color: transparent;
+    color: #8b8b8b;
+    border: none;
+    padding: 0;
+    outline: none;
+    position: relative;
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .products {
-
-  &__filter {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-  }
 
   &__content {
     display: flex;
@@ -557,7 +268,7 @@
     max-width: 275px;
     width: 100%;
     margin-bottom: 40px;
-    background-color: $white;
+    background-color: white;
     text-align: center;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
@@ -590,7 +301,7 @@
   &__name {
     display: block;
     @extend %dmsansmedium-500;
-    color: $count-color;
+    color: $dark-blue;
     font-size: 16px;
     line-height: 1;
     margin-bottom: 12px;
@@ -612,7 +323,7 @@
 
   &__item:hover &__controls {
     display: flex;
-    top: 190px;
+    top: 203px;
     justify-content: center;
   }
 
@@ -620,7 +331,7 @@
     width: 45px;
     height: 45px;
     border: none;
-    background-color: $white;
+    background-color: white;
     border-radius: 50%;
     padding: 12px;
     z-index: 5;
@@ -628,185 +339,9 @@
     &:not(:last-child) {
       margin-right: 17px;
     }
-
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 4px  #fcd7b6;
-    }
-
-    &:hover{
-      background-color: #a3bbc8;
-      transform: scale(1.4);
-      
-      path {
-        fill: white;
-      }
-    }
-
-    &:active {
-      outline: none;
-      box-shadow: 0 0 0 4px  #fcd7b6;
-    }
+  }
+  
+  .mixitup-control-active {
+    color:#000000;
   }
 }
-
-.mixitup-control-active {
-  color:#000000;
-}
-
-/*----------------------------------------------------*/
-/* Стили футера */
-
-.footer {
-  padding-top: 100px;
-  padding-bottom: 40px;
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  &__item {
-    max-width: 270px;
-    width: 100%
-  }
-
-  &__logo {
-    display: block;
-    margin-top: -18px;
-    margin-bottom: 26px;
-  }
-
-  &__subtitle {
-    @extend %dmsansbold-700;
-    font-size: 16px;
-    color: #1f2044;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-
-  &__option {
-    margin-bottom: 13px;
-  }
-
-  &__link {
-    @extend %rubikregular-400;
-    font-size: 14px;
-    line-height: 1;
-    color: #7b7b7b;
-  }
-
-  &__newsletter {
-    margin-bottom: 33px;
-    line-height: 1.5;
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    @extend %rubikregular-400;
-    font-size: 14px;
-    color: #7b7b7b;
-    border-top: 1px solid #dae4e9;
-    padding-top: 35px;
-  }
-
-  &__menu {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__menu-link {
-    padding: 0 15px;
-    @extend %rubikregular-400;
-    font-size: 14px;
-    line-height: 1;
-    color: #7b7b7b;
-    position: relative;
-    
-    &::after {
-      position: absolute;
-      z-index: -1;
-      bottom: -2px;
-      left: 0px;
-      width: calc(98%);
-      height: 2px;
-      background-color: #fcd7b6;
-      transition: height .3s;
-    }
-
-    &:focus::after {
-      height: calc(100% + 5px);
-    }
-    
-    &:hover::after {
-      content: '';
-    }
-    
-    &:active::after {
-      background-color: #fcd7b6;
-    }
-  }
-
-  &__menu-option:last-child &__menu-link{
-    padding: 0 0 0 15px;
-  }
-
-  &__menu-option:not(:last-child) {
-    border-right: 1px solid #7b7b7b;
-  }
-}
-
-.subscribe {
-  display: flex;
-  justify-content: space-between;
-  @extend %dmsansregular-400;
-
-  &__mail {
-    max-width: 170px;
-    width: 100%;
-    height: 40px;
-    background-color: #fef7f0;
-    padding-left: 12px;
-    border: none;
-  }
-
-  &__mail::placeholder {
-    font-size: 12px;
-    color: #234969;
-  }
-
-  &__btn {
-    max-width: 100px;
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    background-color: #a3bbc8;
-    border: none;
-    color: #ffffff;
-  }
-}
-
-.address {
-  max-width: 200px;
-  @extend %rubikregular-400;
-  font-size: 14px;
-  line-height: 1.6;
-  font-style: normal;
-  color: #7b7b7b;
-
-  &__upprcase {
-    text-transform: uppercase;
-  }
-
-  &__requisits {
-    margin-bottom: 20px;
-  }
-
-  &__link {
-    margin-bottom: 20px;
-    color: #7b7b7b;
-  }
-}
-

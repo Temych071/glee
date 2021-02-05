@@ -1,9 +1,8 @@
 /* Переменные для основных цветов */
-$menu-color: #436372;
-$count-color: #243f4d;
-$white: #ffffff;
-$DMSans-bold: #414141;
-$DMSans-reg: #585858;
+$light-blue: #436372;
+$dark-blue: #243f4d;
+$dark-brown: #414141;
+$light-brown: #585858;
 
 /* Переменные для шрифтов */
 %rubikmedium-500 {
@@ -31,10 +30,10 @@ $DMSans-reg: #585858;
   font-weight: 700;
 }
 
-
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
  }
+
  @function min($numbers...) {
   @return m#{i}n(#{$numbers});
  }

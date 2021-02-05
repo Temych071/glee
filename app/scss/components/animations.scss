@@ -1,0 +1,122 @@
+
+.animation-links {
+  outline: transparent;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 2px;
+  transition: border-color 0.5s;
+  transition: background-color 0.5s;
+  
+  &:focus {
+    border-color: #fcd7b6;
+    border-radius: 6px;
+  }
+  
+  &:hover {
+    height: 2px;
+    background-color: #fcd7b6;
+  }
+  
+  &:active {
+    border-color: $light-blue;
+  }
+}
+
+.animation-header {
+  border: 5px solid transparent;
+  outline: transparent;
+  transition: border-color 0.5s;
+  transition: background-color 0.5s;
+  
+  &:focus {
+    border-color:  #78a9f8;
+  }
+
+  &:hover {
+    
+    path {
+      fill:red;
+    }
+
+  }
+
+  &:active {
+    background-color: #78a9f8;
+  }
+}
+
+.animation-btn {
+  border: 5px solid transparent;
+  outline: transparent;
+  transition: background-color 0.5s;
+  transition: box-shadow .3s;
+
+    &:focus {
+      outline: transparent;
+      box-shadow: 0 0 0 7px  #fcd7b6;
+    }
+
+    &:hover{
+      background-color: #78a9f8;
+      
+      path {
+        fill: white;
+      }
+    }
+
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 7px  #fcd7b6;
+    }
+}
+
+
+.animation-button {
+  border: 3px solid transparent;
+  outline: transparent;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+
+    &:focus {
+      outline: transparent;
+      box-shadow: 0 0 0 7px  #748bb1;
+      border-radius: 6px;
+    }
+
+    &:hover{
+      background-color: #78a9f8;
+      
+      path {
+        fill: white;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 0 7px  #3c4147;
+    }
+}
+
+.animation-text {
+  border: 3px solid transparent;
+  outline: transparent;
+  transition: background-color 0.5s;
+  transition: box-shadow 0.3s;
+
+    &:focus {
+      outline: transparent;
+      box-shadow: 0 0 0 7px  #748bb1;
+      border-radius: 6px;
+    }
+
+    &:hover{
+      background-color: #78a9f8;
+      
+      path {
+        fill: white;
+      }
+    }
+
+    &:active {
+      box-shadow: 0 0 0 7px  #3c4147;
+    }
+}

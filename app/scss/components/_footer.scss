@@ -1,0 +1,137 @@
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%
+  }
+
+  &__logo {
+    display: block;
+    margin-top: -18px;
+    margin-bottom: 26px;
+  }
+
+  &__subtitle {
+    @extend %dmsansbold-700;
+    font-size: 16px;
+    color: #1f2044;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__option {
+    margin-bottom: 13px;
+  }
+
+  &__link {
+    @extend %rubikregular-400;
+    font-size: 14px;
+    line-height: 1;
+    color: #7b7b7b;
+  }
+
+  &__newsletter {
+    margin-bottom: 33px;
+    line-height: 1.5;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    @extend %rubikregular-400;
+    font-size: 14px;
+    color: #7b7b7b;
+    border-top: 1px solid #dae4e9;
+    padding-top: 35px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -11px;
+  }
+
+  &__menu-link {
+    padding: 0 13px;
+    @extend %rubikregular-400;
+    font-size: 14px;
+    line-height: 1;
+    color: #7b7b7b;
+    position: relative;
+  }
+
+  &__menu-option:last-child &__menu-link{
+    padding-right: 13px;
+  }
+
+  &__menu-option:not(:last-child) {
+    border-right: 1px solid #7b7b7b;
+  }
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  @extend %dmsansregular-400;
+  
+  &__email {
+    display: none;
+  }
+
+  &__field {
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background-color: #fef7f0;
+    padding-left: 18px;
+    border: none;
+  }
+
+  &__field::placeholder {
+    font-size: 12px;
+    color: #234969;
+    @extend %dmsansregular-400;
+  }
+
+  &__btn {
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #ffffff;
+    @extend %dmsansregular-400;
+  }
+}
+
+.address {
+  max-width: 200px;
+  @extend %rubikregular-400;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: normal;
+  color: #7b7b7b;
+
+  &__upprcase {
+    text-transform: uppercase;
+  }
+
+  &__requisits {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: #7b7b7b;
+  }
+}
+

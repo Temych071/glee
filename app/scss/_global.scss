@@ -2,7 +2,7 @@ body {
   @extend %dmsansmedium-500;
   font-size: 15px;
   line-height: 1.3;
-  color: $menu-color;
+  color: $light-blue;
   background-color: white;
 }
 
@@ -13,8 +13,6 @@ body {
   
   &--small {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
   }
 }
 
