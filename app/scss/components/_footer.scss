@@ -36,11 +36,12 @@
     @extend %rubikregular-400;
     font-size: 14px;
     line-height: 1;
-    color: #7b7b7b;
+    color: $gray;
   }
 
   &__newsletter {
     margin-bottom: 33px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -49,7 +50,7 @@
     justify-content: space-between;
     @extend %rubikregular-400;
     font-size: 14px;
-    color: #7b7b7b;
+    color: $gray;
     border-top: 1px solid #dae4e9;
     padding-top: 35px;
   }
@@ -61,24 +62,28 @@
   }
 
   &__menu-link {
-    padding: 0 13px;
     @extend %rubikregular-400;
     font-size: 14px;
     line-height: 1;
-    color: #7b7b7b;
+    color: $gray;
     position: relative;
   }
 
-  &__menu-option:last-child &__menu-link{
-    padding-right: 13px;
-  }
+  &__menu-option {
+    padding: 0 11px;
+    
+    &:last-child{
+      padding-right: 13px;
+    }
 
-  &__menu-option:not(:last-child) {
-    border-right: 1px solid #7b7b7b;
+    &:not(:last-child) {
+      border-right: 1px solid $gray;
+    }
   }
+  
 }
 
-.footer-form {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
   @extend %dmsansregular-400;
@@ -91,8 +96,8 @@
     max-width: 170px;
     width: 100%;
     height: 40px;
-    background-color: #fef7f0;
-    padding-left: 18px;
+    background-color: $soft-orange;
+    padding: 0 18px;
     border: none;
   }
 
@@ -107,9 +112,10 @@
     width: 100%;
     height: 40px;
     font-size: 14px;
-    background-color: #a3bbc8;
+    background-color: $sky-blue;
     border: none;
-    color: #ffffff;
+    padding: 0;
+    color: white;
     @extend %dmsansregular-400;
   }
 }
@@ -120,7 +126,7 @@
   font-size: 14px;
   line-height: 1.6;
   font-style: normal;
-  color: #7b7b7b;
+  color: $gray;
 
   &__upprcase {
     text-transform: uppercase;
@@ -131,7 +137,7 @@
   }
 
   &__link {
-    color: #7b7b7b;
+    color: $gray;
   }
 }
 

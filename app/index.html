@@ -4,8 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee Home Page</title>
+  <title>Glee | Home Page</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -39,7 +46,7 @@
         </nav>
 
         <div class="controls">
-          <a href="#" class="controls__search animation-btn">
+          <a href="#" class="controls__item animation-btn">
             <svg width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
               <path fill-rule="#243f4d" fill-rule="evenodd"
                 d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
@@ -67,7 +74,7 @@
             <span class="sr-only">Cart</span>
           </a>
 
-          <a href="#" class="controls__grid animation-btn">
+          <a href="#" class="controls__item animation-btn">
             <svg width="20.03" height="20.031" viewBox="0 0 20.03 20.031">
               <path fill="#fff" fill-rule="evenodd"
                 d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
@@ -82,7 +89,7 @@
 
   <main class="main">
     <div class="container">
-      <section class="slider-main slider">
+      <section class="slider-main">
 
         <div class="slider-main__item">
           <div class="container container--small">
@@ -95,10 +102,14 @@
                 <p class="slider-main__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 </p>
-                <a class="slider-main__link button animation-button" href="#">Shop Now</a>
+                <a class="slider-main__link button animation-button" href="#">Shop Now
+                  <svg class="specials__arrow button--arrow" width="22" height="9" viewBox="0 0 22 9">
+                    <path fill="#fff" fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                  </svg>
+                </a>
               </div>
 
-              <div class="slider-main__image" style="background-image: url(images/sofa.png);"></div>
+              <img class="slider-main__image" src="images/sofa.png">
             </div>
           </div>
         </div>
@@ -114,10 +125,14 @@
                 <p class="slider-main__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 </p>
-                <a class="slider-main__link button animation-button" href="#">Shop Now</a>
+                <a class="slider-main__link button animation-button" href="#">Shop Now
+                  <svg class="specials__arrow button--arrow" width="22" height="9" viewBox="0 0 22 9">
+                    <path fill="#fff" fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                  </svg>
+                </a>
               </div>
 
-              <div class="slider-main__image" style="background-image: url(images/sofa.png);"></div>
+              <img class="slider-main__image" src="images/sofa.png">
             </div>
           </div>
         </div>
@@ -133,10 +148,14 @@
                 <p class="slider-main__text">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 </p>
-                <a class="slider-main__link button animation-button" href="#">Shop Now</a>
+                <a class="slider-main__link button animation-button" href="#">Shop Now
+                  <svg class="specials__arrow button--arrow" width="22" height="9" viewBox="0 0 22 9">
+                    <path fill="#fff" fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                  </svg>
+                </a>
               </div>
 
-              <div class="slider-main__image" style="background-image: url(images/sofa.png);"></div>
+              <img class="slider-main__image" src="images/sofa.png">
             </div>
           </div>
         </div>
@@ -177,17 +196,17 @@
           Products of the week
         </h2>
 
-        <ul class="filter">
-          <li class="filter__btn" type="button" data-filter="all">All</li>
-          <li class="filter__btn" type="button" data-filter=".furnitures">Furnitures</li>
-          <li class="filter__btn" type="button" data-filter=".chairs">Chairs</li>
-          <li class="filter__btn" type="button" data-filter=".lighting">Lighting</li>
-          <li class="filter__btn" type="button" data-filter=".decor">Decor</li>
+        <ul class="products__filter filter">
+          <li class="filter__btn animation-links filter-1" data-filter="all">All</li>
+          <li class="filter__btn animation-links filter-1" data-filter=".products__furnitures">Furnitures</li>
+          <li class="filter__btn animation-links filter-1" data-filter=".products__chairs">Chairs</li>
+          <li class="filter__btn animation-links filter-1" data-filter=".products__lighting">Lighting</li>
+          <li class="filter__btn animation-links filter-1" data-filter=".products__decor">Decor</li>
         </ul>
 
         <div class="products__content">
 
-          <div class="products__item mix furnitures">
+          <div class="products__item mix products__furnitures">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/1.png" alt="">
@@ -196,7 +215,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -204,7 +223,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -212,7 +231,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -224,7 +243,7 @@
             </a>
           </div>
 
-          <div class="products__item mix chairs">
+          <div class="products__item mix products__chairs">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/2.png" alt="">
@@ -233,7 +252,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -241,7 +260,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -249,7 +268,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -261,7 +280,7 @@
             </a>
           </div>
 
-          <div class="products__item mix furnitures">
+          <div class="products__item mix products__furnitures">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/3.png" alt="">
@@ -270,7 +289,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -278,7 +297,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -286,7 +305,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -298,7 +317,7 @@
             </a>
           </div>
 
-          <div class="products__item mix decor">
+          <div class="products__item mix products__decor">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/4.png" alt="">
@@ -307,7 +326,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -315,7 +334,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -323,7 +342,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -335,7 +354,7 @@
             </a>
           </div>
 
-          <div class="products__item mix decor">
+          <div class="products__item mix products__decor">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/5.png" alt="">
@@ -344,7 +363,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -352,7 +371,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -360,7 +379,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -372,7 +391,7 @@
             </a>
           </div>
 
-          <div class="products__item mix chairs">
+          <div class="products__item mix products__chairs">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/6.png" alt="">
@@ -381,7 +400,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -389,7 +408,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -397,7 +416,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -409,7 +428,7 @@
             </a>
           </div>
 
-          <div class="products__item mix decor">
+          <div class="products__item mix products__decor">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/7.png" alt="">
@@ -418,7 +437,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -426,7 +445,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -434,7 +453,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -446,7 +465,7 @@
             </a>
           </div>
 
-          <div class="products__item mix decor">
+          <div class="products__item mix products__decor">
             <a class="products__link" href="#">
               <div class="products__body">
                 <img class="products__img" src="images/products/8.png" alt="">
@@ -455,7 +474,7 @@
               </div>
 
               <div class="products__controls controls">
-                <a class="products__button animation-btn" href="#">
+                <a class="controls__item controls__item--middle animation-btn" href="#">
                   <svg width="20" height="20" viewBox="0 0 20 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
@@ -463,7 +482,7 @@
                   </svg>
                   <span class="sr-only">Search</span>
                 </a>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="20" viewBox="0 0 22 20">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
@@ -471,7 +490,7 @@
                   </svg>
                   <span class="sr-only">Cart</span>
                 </button>
-                <button class="products__button animation-btn" type="submit">
+                <button class="controls__item controls__item--middle animation-btn" type="submit">
                   <svg width="22" height="18" viewBox="0 0 22 18">
                     <path fill="#a3bbc8" fill-rule="evenodd"
                       d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
@@ -485,7 +504,250 @@
 
         </div>
       </div>
+
+      <div class="container">
+        <div class="specials">
+          <div class="specials__item">
+            <img src="images/lamp_1.png" alt="">
+            <div class="specials__content">
+              <span class="specials__title">
+                Mirum Notare Tellus
+              </span>
+              <span class="specials__desc">
+                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+              </span>
+              <a class="specials__link button animation-button" href="#">View more
+                <svg class="specials__arrow button--arrow" width="22" height="9" viewBox="0 0 22 9">
+                  <path fill="#fff" fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="specials__item">
+            <img src="images/lamp_2.png" alt="">
+            <div class="specials__content">
+              <span class="specials__title">
+                Malesuada Tempor Euismod
+              </span>
+              <span class="specials__desc">
+                50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+              </span>
+              <a class="specials__link button animation-button" href="#">View more
+                <svg class="specials__arrow button--arrow" width="22" height="9" viewBox="0 0 22 9">
+                  <path fill="#fff" fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="design">
+      <div class="container container--small">
+
+        <h2 class="design__title title">
+          New Design
+        </h2>
+
+        <ul class="design__filter filter">
+          <li class="filter__btn animation-links filter-2" data-filter="all">All</li>
+          <li class="filter__btn animation-links filter-2" data-filter=".design__furnitures">Furnitures</li>
+          <li class="filter__btn animation-links filter-2" data-filter=".design__chairs">Chairs</li>
+          <li class="filter__btn animation-links filter-2" data-filter=".design__lighting">Lighting</li>
+          <li class="filter__btn animation-links filter-2" data-filter=".design__decor">Decor</li>
+        </ul>
+
+        <div class="design__content">
+
+          <div class="design-item mix design__furnitures">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/1.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Beat Flat Pendant Black</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="design-item mix design__chairs">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/2.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Lampe Sur Pieds Bamboo</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="design-item mix design__lighting">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/3.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Rattan Rocking Chair</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="design-item mix design__furnitures">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/4.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Rattan Rocking Chair</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="design-item mix design__lighting">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/5.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Rattan Rocking Chair</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="design-item mix design__furnitures">
+            <a class="design-item__link" href="#">
+              <img class="design-item__img" src="images/design/6.jpg" alt="">
+              <div class="design-item__body">
+                <span class="design-item__name">Lampe Sur Pieds Bamboo</span>
+                <span class="design-item__desc">Classic</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="video" style="background-image: url('images/video-fon.jpg');">
+        <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=FITTfBnZf3E">
+          <div class="play-button">
+            <button class="play-button__img">
+              <svg width="22" height="25" viewBox="0 0 22 25">
+                <path fill="#fff" fill-rule="evenodd" d="M970.684,3900.74l-16.044,9.8a3.228,3.228,0,0,1-3.062.14,2.685,2.685,0,0,1-1.579-2.39V3888.7a2.685,2.685,0,0,1,1.579-2.39,3.258,3.258,0,0,1,3.062.15l16.044,9.79A2.666,2.666,0,0,1,972,3898.5,2.638,2.638,0,0,1,970.684,3900.74Z" transform="translate(-950 -3886)"/>
+              </svg>
+            </button>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="articles">
+      <div class="container container--small">
+        <div class="articles__header">
+          <h2 class="articles__title title">
+            Our Insights & Articles
+          </h2>
+          <a href="#" class="articles__link">View All ></a>
+        </div>
+
+        <div class="articles__content">
+          <div class="articles-item">
+
+            <img class="articles-item__img" src="images/articles/1.jpg" alt="">
+            <span class="articles-item__news-link">news</span>
+            <span class="articles-item__text">Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam</span>
+            <span class="articles-item__date"> 28 January, 2020</span>
+            <span class="articles-item__author"> By Admin</span>
+          </div>
+
+          <div class="articles-item">
+            <img class="articles-item__img" src="images/articles/1.jpg" alt="">
+            <span class="articles-item__news-link">news</span>
+            <span class="articles-item__text">Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore </span>
+            <span class="articles-item__date"> 28 January, 2020</span>
+            <span class="articles-item__author"> By Admin</span>
+          </div>
+
+          <div class="articles-item">
+            <img class="articles-item__img" src="images/articles/1.jpg" alt="">
+            <span class="articles-item__news-link">news</span>
+            <span class="articles-item__text">Rncididunt ut labore et dolore magna aliqua. Ut enim </span>
+            <span class="articles-item__date"> 28 January, 2020</span>
+            <span class="articles-item__author"> By Admin</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="container container--small">
+          <div class="slider-partners">
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/1.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/2.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/3.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/4.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/5.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/1.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/2.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/3.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/4.png" alt="">
+              </div>
+            </div>
+
+            <div class="slider-partners__item">
+              <div class="slider-partners__body">
+                <img class="slider-partners__logo" src="images/partners/5.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -542,12 +804,13 @@
             Subscribe by our newsletter and get update protidin.
           </p>
 
-          <form class="footer-form" action="">
+          <form class="subscribe-form" action="">
 
-            <label for="footer-form__email" class="footer-form__email">Email address</label>
-            <input id="footer-form__email" class="footer-form__field" name="email" type="email" placeholder="Email address">
+            <label for="subscribe-form__email" class="subscribe-form__email">Email address</label>
+            <input id="subscribe-form__email" class="subscribe-form__field" name="email" type="email"
+              placeholder="Email address">
 
-            <button class="footer-form__btn button animation-button" type="submit">Subscribe</button>
+            <button class="subscribe-form__btn button animation-button" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
