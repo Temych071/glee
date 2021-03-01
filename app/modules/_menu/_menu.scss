@@ -1,0 +1,19 @@
+
+.menu {
+  margin-right: 21px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    color: $light-blue;
+    @extend %rubikmedium-500;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}

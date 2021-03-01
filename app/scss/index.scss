@@ -1,0 +1,359 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+@import 'components/animations.scss';
+@import 'components/slider-main';
+
+
+@import '../modules/_header/header';
+@import '../modules/_footer/footer';
+@import '../modules/_menu/menu';
+
+
+
+/*----------------------------------------------------*/
+/* Стили блока продуктов недели */
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: black;
+  @extend %dmsansbold-700;
+  font-size: 36px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  &__btn {
+    @extend %dmsansbold-700;
+    font-size: 16px;
+    background-color: transparent;
+    color: #8b8b8b;
+    border: none;
+    padding: 0;
+    position: relative;
+    
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.products {
+  margin-bottom: 100px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 400px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 275px;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+
+  &__link {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__body { 
+    padding: 25px 10px 35px;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__img { 
+    display: block;
+    text-align: center;
+    margin-bottom: 75px;
+    object-fit: contain;
+  }
+
+  &__name {
+    display: block;
+    @extend %dmsansmedium-500;
+    color: $dark-blue;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    display: block;
+    @extend %dmsansbold-700;
+    color: $sky-blue;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    top: 203px;
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    transition: opacity 0.5s;
+  }
+
+  &__item:hover &__controls {
+    opacity: 1;
+  }
+
+  .mixitup-control-active {
+    color: black;
+  }
+}
+
+.specials {
+  display: flex;
+  justify-content: space-between;
+  
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 870px;
+    height: 390px;
+    background-color: #feefe2;
+    margin-top: 150px;
+    padding: 80px 30px 80px;
+  }
+
+  &__content {
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 18px 18px 25px;
+    color: $dark-blue;
+  }
+
+  &__title {
+    @extend %dmsansbold-700;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    @extend %rubikregular-400;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    background-color: transparent;
+    border: 1px solid $light-blue;
+    color: $light-blue;
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    padding-left: 15px;
+
+    &:after path {
+      fill: $light-blue;
+    }
+  }
+
+  .specials__arrow {
+    
+    path {
+      fill:$light-blue;
+    }
+  }
+}
+
+.design {
+  margin-bottom: 85px;
+  &__content {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .mixitup-control-active {
+    color: black;
+  }
+}
+
+.design-item {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  height: 245px;
+  margin-bottom: 38px;
+  background-color: #f8f8f8;
+
+  &__link {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  &__body {
+    position: absolute;
+    width: 180px;
+    top: 40px;
+    left: 40px;
+    @extend %dmsansbold-700;
+  }
+
+  &__name {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: $sky-blue;
+  }
+  
+}
+
+.video {
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 115px;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.articles {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+
+.articles-item {
+  max-width: 370px;
+  height: 425px;
+  background-color: white;
+
+  &__img {
+    width: 370px;
+    height: 250px;
+    object-fit: contain;
+  }
+
+  &__news-link {
+    display: block;
+    border-radius: 12px;
+    padding-top: 6px;
+    position: relative;
+    z-index: 3;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: $sky-blue;
+    color: white;
+    margin-top: -15px;
+    margin-left: 30px;
+    font-size: 14px;
+    @extend %poppinsbold-700;
+    text-transform: uppercase;
+  }
+  
+  &__body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: block;
+    height: 85px;
+    overflow: hidden;
+    margin: 15px 30px;
+    padding-bottom: 15px; 
+    position: relative;
+    font-size: 18px;
+    @extend %dmsansmedium-500;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__date,
+  &__author {
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-bottom: 15px; 
+    font-size: 12px;
+    @extend %rubikregular-400;
+    text-transform: uppercase;
+  }
+
+}
+
+.partners {
+  background-color: $soft-orange;
+  height: 437px;
+  margin-top: -175px;
+  padding-top: 260px;
+}
+
+.slider-partners {
+  &__item {
+    height: 100px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+    margin-right: 55px;
+  }
+}
