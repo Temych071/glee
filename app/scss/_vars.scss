@@ -8,6 +8,7 @@ $soft-orange: #fef7f0;
 $orange:#fcd7b6;
 $gray: #7b7b7b;
 $blue: #78a9f8;
+$turquoise: #a3bbc8;
 
 /* Переменные для шрифтов */
 %rubikmedium-500 {
@@ -19,6 +20,12 @@ $blue: #78a9f8;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
+
+%rubikbold-700 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
 
 %dmsansregular-400 {
   font-family: 'DMSans', sans-serif;
