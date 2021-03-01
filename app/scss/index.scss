@@ -243,12 +243,13 @@
   
 }
 
-  .specials__arrow {
+.specials__arrow {
     
-    path {
-      fill:$light-blue;
-    }
+  path {
+    fill:$light-blue;
   }
+}
+
 .design {
   margin-bottom: 85px;
   &__content {
@@ -261,6 +262,7 @@
   .mixitup-control-active {
     color: black;
   }
+
 }
 
 .design-item {
@@ -272,11 +274,20 @@
   background-color: #f8f8f8;
 
   &__link {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+  }
+
+  &__img {
+    @media (max-width: 550px) {
+      max-width: 550px;
+      width: 70%;
+      margin-left: auto;
+      margin-top: 50px;
+    }
   }
   
   &__body {
@@ -299,6 +310,21 @@
     color: $sky-blue;
   }
   
+  
+  @media (max-width: 992px) {
+    max-width: 370px;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 550px;
+    width: 100%;
+    height: 205px;
+  }
 }
 
 .video {
