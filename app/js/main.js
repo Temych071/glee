@@ -5,10 +5,27 @@ $(function(){
     dots: true,
   });
 
+  let slides = 5;
+  if(window.innerWidth < 1170 && window.innerWidth > 776) {
+    slides = 4;
+    window.reload;
+  }
+  else if (window.innerWidth < 776 && window.innerWidth > 556){
+    slides = 3;
+    window.reload;
+  }
+  else if (window.innerWidth < 556){
+    slides = 1;
+    window.reload;
+  }
+  console.log(window);
+  console.log(window.innerWidth);
+  console.log(slides);
+
   $('.slider-partners').slick({
     arrows: false,
     dots: false,
-    slidesToShow: 5,
+    slidesToShow: slides,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
